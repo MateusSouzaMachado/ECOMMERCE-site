@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Eletrônicos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Loja Eletrônica</div>
+            <button id="cart-button">Carrinho (0)</button>
+        </nav>
+    </header>
+
+    <section class="products">
+        <div class="product">
+            <img src="notebook.jpg" alt="notebook">
+            <h3>notebook</h3>
+            <p>R$ 2500,00</p>
+            <button class="add-to-cart" data-id="1" data-name="notebook" data-price="2500">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="celular.jpg" alt="celular">
+            <h3>celular</h3>
+            <p>R$ 3300,00</p>
+            <button class="add-to-cart" data-id="2" data-name="celular" data-price="3300">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="produto3.jpg" alt="Produto 3">
+            <h3>Produto 3</h3>
+            <p>R$ 400,00</p>
+            <button class="add-to-cart" data-id="3" data-name="Produto 3" data-price="400">Adicionar ao Carrinho</button>
+        </div>
+    </section>
+
+    <div id="cart-modal" class="cart-modal">
+        <h2>Carrinho de Compras</h2>
+        <ul id="cart-items"></ul>
+        <button id="finalize-button">Finalizar Compra</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
